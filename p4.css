@@ -1,0 +1,92 @@
+body {
+    background-color: #E5E5FF;
+    text-align: center;
+    color: #5C5858;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#game {
+    display: inline-block;
+    text-align: center;
+    background-color: blue;
+    border-radius: 0.50em;
+
+}
+.col {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #E5E5FF;
+    margin: 5px;
+    display: inline-block;
+    border: thick double rgb(3, 3, 202);
+}
+
+.col.empty {
+    cursor: pointer;
+}
+
+.col.ONE{
+    background-color: red;
+}
+
+.col.TWO{
+    background-color: yellow;
+}
+
+.col.pONE{
+    background-color: darkred;
+}
+
+.col.pTWO{
+    background-color: goldenrod;
+}
+
+.col.green{
+    background-color: green;
+}
+
+.scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.scores > div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.75em;
+    margin: 0.5em;
+  
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.25em;
+}
+  
+.scores > div > span:first-child {
+    margin-bottom: 0.5em;
+}
+  
+.scores > div > span:last-child {
+    font-size: 1.5em;
+}
+
+.scores > div > button {
+    margin-top: 50%;
+    margin-bottom: 50%;
+    border: 2px solid #8787ff;
+    border-radius: 50px;
+    background-color: #b6b6ff;
+    font-size: 25px;      
+}
+
+.scores > div > button:hover {
+    border: 2px solid  #b6b6ff;
+    background-color: #8787ff;
+
+
+}

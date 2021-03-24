@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="p4.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <script src="p4.js"></script>
+    <title>Puissance 4</title>
+
+</head>
+<body>
+    <h2>Puissance 4</h2><br>
+    <div class="scores">
+        <div>
+          <span>Joueur One</span>
+          <span id="playerOne">0</span>
+        </div>
+        <div>
+          <span>Joueur Two</span>
+          <span id="playerTwo">0</span>
+        </div>
+      </div>
+      <div class="scores">
+        <div>    
+          <button id="restart" style="visibility:hidden;">&#11119;</button><br>
+        </div>
+        <div>
+          <span>Tour</span>
+          <span id="count">0</span>
+        </div>
+        <div>
+          <button id="cancel"style="visibility:hidden;">&#x21A9;</button>
+        </div>
+      </div>
+
+    <br><br><div id="game"></div>
+    <script>$( "game" ).puissance4({ col:7, lgn:6 });</script>
+    
+    
+    
+</body>
+</html>
